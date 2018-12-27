@@ -1,5 +1,5 @@
 CPP         = g++
-CFLAGS      = -O2 -std=c++14 -D_RPI
+CFLAGS      = -O2 -std=c++14
 INC         = -I/opt/vc/include
 DEPS        = fruitbox.hpp fruitbox_types.hpp pages.hpp status.hpp playqueue.hpp audio.hpp config.hpp config_base.hpp database.hpp display.hpp \
               engine.hpp fruitbox_logo.hpp info_bkgnd.hpp chooser_arrow.hpp info_font.hpp status_events.hpp userguide.hpp bitmap.hpp joystick.hpp display_base.hpp input.hpp
