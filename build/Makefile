@@ -13,12 +13,12 @@ STATIC_LIBS = allegro-static-5 allegro_memfile-static-5 allegro_font-static-5 al
 	$(CPP) -c -o $@ $< $(CFLAGS) $(INC)
 
 # ./fruitbox: $(OBJ)
-../fruitbox: $(OBJ)
+./fruitbox: $(OBJ)
 	$(CPP) -Wall -o $@ $^ $(CFLAGS) $(LIBS) `pkg-config --libs --static $(STATIC_LIBS)`
 
 .PHONY: clean
 clean:
 	rm -f *.o
-	rm -f ../fruitbox
+	rm -f ./fruitbox
 	touch Makefile
 	touch *.?pp
